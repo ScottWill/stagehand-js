@@ -21,10 +21,20 @@
 *	CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 **/
 
-(function (stagehand) {
+;(function (undefined) {
+    
+    'use strict';
+    
+    var __version = '0.0.0004',
+        __defaults = {};
 	
-	stagehand.version = '0.0.0001';
-	
-	window.stagehand = stagehand;
-	
-})(this['stagehand'] = this['stagehand'] || {});
+    window.Stagehand = function() {
+        
+        var _scope = this;
+
+        return {
+            version: __version
+        };    
+    };
+    
+})();
